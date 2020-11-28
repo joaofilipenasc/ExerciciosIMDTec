@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+
+<body>
+    <h1>Entrada do Programa</h1>
+    a: <input type="number" id="a" value=""><br />
+    b: <input type="number" id="b" value=""><br />
+
+    <button onclick='mediaEntreDoisNum()'>MEDIA</button>
+    <p id="resultado"></p>
+    <script>
+        function mediaEntreDoisNum() {
+            var a = Number(document.getElementById('a').value);
+            var b = Number(document.getElementById('b').value);
+
+            var media = (a + b) / 2;
+
+            document.getElementById('resultado').innerHTML = "A média entre os números " + a +" e " + b + " é " + media.toFixed(2);
+        }
+    </script>
+</body>
+
+</html>

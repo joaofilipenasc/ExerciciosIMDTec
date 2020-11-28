@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+
+<body>
+    <h1>Entrada do Programa</h1>
+    a: <input type="number" id="a" value=""><br />
+    b: <input type="number" id="b" value=""><br />
+    c: <input type="number" id="c" value=""><br />
+
+    <button onclick='mediaPonderada()'>MEDIA</button>
+    <p id="resultado"></p>
+    <script>
+        function mediaPonderada() {
+            var a = Number(document.getElementById('a').value);
+            var b = Number(document.getElementById('b').value);
+            var c = Number(document.getElementById('c').value);
+
+            var media = (a*4 + b*5 + c*6) / 15;
+
+            document.getElementById('resultado').innerHTML = "A média ponderada (4, 5 e 6) entre os números "+ a +", "+ b +" e "+ c +" é " + Math.ceil(media);
+        }
+    </script>
+</body>
+
+</html>

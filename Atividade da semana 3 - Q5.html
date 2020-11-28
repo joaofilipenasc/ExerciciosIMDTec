@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+
+<body>
+    <h1>Entrada do Programa</h1>
+    a: <input type="number" id="a" value=""><br />
+    b: <input type="number" id="b" value=""><br />
+    c: <input type="number" id="c" value=""><br />
+    d: <input type="number" id="d" value=""><br />
+
+    <button onclick='Maior()'>MAIOR</button>
+    <button onclick='Menor()'>MENOR</button>
+    <p id="maior"></p>
+    <p id="menor"></p>
+    <script>
+        function Maior(a, b, c, d) {
+            var a = Number(document.getElementById('a').value);
+            var b = Number(document.getElementById('b').value);
+            var c = Number(document.getElementById('c').value);
+            var d = Number(document.getElementById('d').value);
+
+            document.getElementById('maior').innerHTML = Math.max(a, b, c, d);
+        }
+        function Menor(a, b, c, d) {
+            var a = Number(document.getElementById('a').value);
+            var b = Number(document.getElementById('b').value);
+            var c = Number(document.getElementById('c').value);
+            var d = Number(document.getElementById('d').value);
+
+            document.getElementById('menor').innerHTML = Math.min(a, b, c, d);
+        }
+    </script>
+</body>
+
+</html>

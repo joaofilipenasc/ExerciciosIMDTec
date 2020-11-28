@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+
+<body>
+    <h1>Questão 1 - Semana 3</h1>
+    <script>
+
+        function pulaLinha() {
+            document.write("<br>");
+        }
+        var data = new Date();
+
+        var dd = String(data.getDate()).padStart(2, '0');
+        var mm = String(data.getMonth() + 1).padStart(2, '0');
+        var yyyy = data.getFullYear();
+        var horas = data.getHours()
+        var min = data.getMinutes();
+
+        data_dia = "Data: " + dd + ' de Nov de ' + yyyy;
+        data_hora = "Hora: " + horas + "h" + min;
+
+        document.write(data_dia);
+        pulaLinha();
+        document.write(data_hora);
+
+    </script>
+</body>
+
+</html>
