@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+
+<body>
+    <h1>Exercicio 2</h1>
+    Número 1:<input type="number" id="x" value=""><br /> Número 2:<input type="number" id="y" value=""><br />
+
+    <button onclick='somaEntreDoisNumeros()'>RESULTADO</button>
+
+    <script>
+        function somaEntreDoisNumeros() {
+            var x = Number(document.getElementById("x").value);
+            var y = Number(document.getElementById("y").value);
+            var soma = 0;
+            for (var i = x; i < y; i++) {
+                soma = soma + i;
+            }
+            alert(soma);
+        }
+    </script>
+
+</body>
+
+</html>

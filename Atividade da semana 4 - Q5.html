@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+
+<body>
+    <h1>Exercicio 5</h1>
+    Número:<input type="number" id="x" value=""><br />
+
+    <button onclick='Divisores()'>RESULTADO</button>
+
+    <script>
+        function Divisores() {
+            var x = Number(document.getElementById("x").value);
+            for (i = 1; i < x; i++) {
+                if (x % i == 0) {
+                    alert(i);
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

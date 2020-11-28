@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+
+<body>
+    <h1>Exercicio 6</h1>
+    Número 1:<input type="number" id="x" value=""><br /> Número 2:<input type="number" id="y" value=""><br />
+
+    <button onclick='paresEimpares()'>RESULTADO</button>
+
+    <script>
+        function paresEimpares() {
+            var x = Number(document.getElementById("x").value);
+            var y = Number(document.getElementById("y").value);
+            var somaPares = 0;
+            var somaImpares = 0;
+
+            for (i = x; i < y; i++) {
+                if (i % 2 == 0) {
+                    somaPares = somaPares + i;
+                }
+                if (i % 2 != 0) {
+                    somaImpares = somaImpares + i;
+                }
+            }
+            alert("Soma de pares: " + somaPares);
+            alert("Soma de ímpares: " + somaImpares);
+        }
+    </script>
+
+</body>
+
+</html>

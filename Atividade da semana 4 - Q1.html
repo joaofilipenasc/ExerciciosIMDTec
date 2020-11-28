@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+
+<body>
+    <h1>Exercicio 1</h1>
+    Digite um número para saber se ele é positivo, negativo ou zero: <input type="number" id="r" value=""><br />
+
+    <button onclick='verificarNumero()'>RESULTADO</button>
+
+    <script>
+        function verificarNumero() {
+            var r = parseFloat(document.getElementById("r").value);
+            if (r > 0) {
+                alert(r + " eh positivo");
+            } else if (r < 0) {
+                alert(r + " eh negativo");
+            } else {
+                alert(r + " eh zero");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
