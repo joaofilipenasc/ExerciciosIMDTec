@@ -1,0 +1,22 @@
+<html>
+
+<head>
+<meta charset="UTF-8" />
+	<title>Programação Estruturada</title>
+	<script>
+		function ultimoDigito(){
+			var x = document.getElementById("x").value;
+        	var ultimo_digito = x%10;
+			alert(ultimo_digito);
+		}
+	</script>
+</head>
+
+<body>
+        <p>Número do usuário:</p>
+        <input id="x" type="text"/>
+        <button id="ultimo_digito" onclick="ultimoDigito()">Último digito</button>
+
+</body>
+
+</html>

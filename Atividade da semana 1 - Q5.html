@@ -1,0 +1,25 @@
+<html>
+
+<head>
+<meta charset="UTF-8" />
+	<title>Programação Estruturada</title>
+	<script>
+		function calculaArea(){
+			var largura = document.getElementById("largura").value;
+        	var profundidade = document.getElementById("profundidade").value;
+        	var area = parseInt(largura) * parseInt(profundidade);
+			document.write("O ambiente possui largura de ",largura," e profundidade de ",profundidade,", totalizando ",area," metros quadrados");
+		}
+	</script>
+</head>
+
+<body>
+        <p>Largura:</p>
+        <input id="largura" type="text"/>
+        <p>Profundidade: </p>
+        <input id="profundidade" type="text"/>
+        <button id="area" onclick="calculaArea()">Média</button>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<html>
+
+<head>
+<meta charset="UTF-8" />
+	<title>Programação Estruturada</title>
+	<script>
+		function mediaAritmetica(){
+			var v1 = document.getElementById("v1").value;
+        	var v2 = document.getElementById("v2").value;
+        	var media = (parseInt(v1) + parseInt(v2))/2;
+			alert(media);
+		}
+	</script>
+</head>
+
+<body>
+        <p>Nota 1:</p>
+        <input id="v1" type="text"/>
+        <p>Nota 2: </p>
+        <input id="v2" type="text"/>
+        <button id="media" onclick="mediaAritmetica()">Média</button>
+
+</body>
+
+</html>

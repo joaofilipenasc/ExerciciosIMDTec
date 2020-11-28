@@ -1,0 +1,25 @@
+<html>
+
+<head>
+<meta charset="UTF-8" />
+	<title>Programação Estruturada</title>
+	<script>
+		function somarValores(){
+			var v1 = document.getElementById("v1").value;
+        	var v2 = document.getElementById("v2").value;
+        	var soma = parseInt(v1) + parseInt(v2);
+			alert(soma);
+		}
+	</script>
+</head>
+
+<body>
+        <p>Valor 1:</p>
+        <input id="v1" type="text"/>
+        <p>Valor 2: </p>
+        <input id="v2" type="text"/>
+        <button id="somar" onclick="somarValores()">Somar</button>
+
+</body>
+
+</html>

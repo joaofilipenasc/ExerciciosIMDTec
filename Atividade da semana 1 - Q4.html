@@ -1,0 +1,25 @@
+<html>
+
+<head>
+<meta charset="UTF-8" />
+	<title>Programação Estruturada</title>
+	<script>
+		function mediaPonderada(){
+			var nota1 = document.getElementById("nota1").value;
+        	var nota2 = document.getElementById("nota2").value;
+        	var media = (parseInt(nota1*2) + parseInt(nota2*3))/5;
+			alert(media);
+		}
+	</script>
+</head>
+
+<body>
+        <p>Nota 1:</p>
+        <input id="nota1" type="text"/>
+        <p>Nota 2: </p>
+        <input id="nota2" type="text"/>
+        <button id="media" onclick="mediaPonderada()">Média</button>
+
+</body>
+
+</html>
