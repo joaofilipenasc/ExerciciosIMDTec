@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+
+<body>
+    <h1>Questão 1</h1>
+    <p>Programa que lê 10 números inteiros em uma ordem qualquer e armazenar em um vetor.<br>Em seguida apresenta todos os números na ordem em que foram lidos e ordena os números em ordem crescente.</p>
+    <button onclick='lerArray()'>OK</button>
+    <p id="resultado"></p>
+
+    <script>
+        function lerArray() {
+            var texto = "";
+            var arr = [];
+            var i;
+
+            for (i = 0; i < 10; i++) {
+                var elemento = prompt("Entre com um valor em sequencia: ");
+                arr[arr.length] = elemento;
+            }
+            for (i = 0; i < 10; i++) {
+                texto = texto + "O elemento " + (i + 1) + " foi " + arr[i] + "<br>";
+            }
+
+            function sortfunction(a, b) {
+                return (a - b);
+            }
+
+            arr.sort(sortfunction);
+
+            for (i = 0; i < 10; i++) {
+                texto = texto + "Na ordem crescente, temos: " + arr[i] + "<br>";
+            }
+            document.getElementById("resultado").innerHTML = texto;
+        }
+    </script>
+
+</body>
+
+</html>
