@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+
+<body>
+    <h1>Questão 2</h1>
+    <p> Programa que recebe e armazena números em uma quantidade indeterminada até que o valor 0 (zero) seja recebido.<br>Em seguida, apresenta o maior e o menor número recebido e os respectivos índices.Além disso, as quatro operações básicas entre os 2 números.</p>
+    <button onclick='OperacoesEntreNums()'>Clique aqui</button>
+    <p id="resultado"></p>
+
+    <script>
+        function OperacoesEntreNums() {
+            var total = Infinity;
+            var arr = [];
+            var i;
+
+            //Laço para a leitura dos números do array
+            for (i = 1; i <= total; i++) {
+                var numero = prompt("Digite com um número: ");
+                arr[arr.length] = numero;
+                if (numero == 0) {
+                    break;
+                }
+            }
+
+            //Método para eliminar o zero (último elemento)
+            arr.pop();
+
+            //Encontrar os valores mínimo e máximo
+            var min = Math.min.apply(null, arr);
+            var max = Math.max.apply(null, arr);
+
+            resposta = "maior = " + max + "<br>";
+            resposta = resposta + "menor = " + min + "<br>";
+            resposta = resposta + "índice do maior = " + arr.indexOf(max) + "<br>"; //Não sei porque não printa o índice do máximo
+            resposta = resposta + "índice do menor = " + arr.indexOf(min) + "<br>"; //Não sei porque não printa o índice do mínimo
+            resposta = resposta + "maior-menor = " + (max - min) + "<br>";
+            resposta = resposta + "maior+menor = " + (max + min) + "<br>";
+            resposta = resposta + "maior*menor = " + (max * min) + "<br>";
+            resposta = resposta + "maior/menor = " + (max / min);
+
+            document.getElementById("resultado").innerHTML = resposta;
+
+        }
+    </script>
+
+</body>
+
+</html>
