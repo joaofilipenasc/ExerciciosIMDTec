@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Programação Estruturada</title>
+</head>
+
+<body>
+    <h1>Semana 6 - Questão 1</h1>
+    <button onclick='arrayRecursivo()'>RESULTADO</button>
+    <p id="resultado"></p>
+
+    <script>
+        function arrayRecursivo() {
+
+            var tamanho = prompt("Digite o tamanho do vetor: ");
+            var arr = [];
+            var i;
+
+            //Leitura dos elementos do array até o tamanho do definido pelo usuário
+            for (i = 0; i < tamanho; i++) {
+                var elemento = prompt("Digite o valor do elemento: ");
+                arr[arr.length] = elemento;
+            }
+
+            //Função para preencher o array
+            function fillArray(n, i) {
+                if (tamanho !== n) {
+                    //Caso base
+                    if (i === 0)
+                        arr[i] = i;
+                    //Recursão
+                    else
+                        arr[i] = arr[i - 1] + 1;
+                    fillArray(n, ++i);
+                }
+            }
+
+            fillArray(tamanho, 0);
+            var r = document.write(arr);
+            document.getElementById('resultado').innerHTML = r;
+
+        }
+    </script>
+
+
+</body>
+
+</html>
